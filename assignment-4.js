@@ -5,8 +5,8 @@ function mindGame(number) {
     const result = bag -5;
     return result
 }
-const result =mindGame(10)
-console.log(result);
+// const result =mindGame(10)
+// console.log(result);
 
 
 
@@ -21,8 +21,8 @@ function evenOdd(string) {
     
 }
 
-const result2 =evenOdd('sohel')
-console.log(result2);
+// const result2 =evenOdd('sohel')
+// console.log(result2);
 
 
 
@@ -34,7 +34,19 @@ function isLGSeven (number) {
         return number * 2;
     }
 }
-const result3 = isLGSeven(17)
-console.log(result3);
+// const result3 = isLGSeven(17)
+// console.log(result3);
 
 
+function findingBadData(age) {
+    let badData = []
+    for (let i = 0; i < age.length; i++) {
+        const singleAge = age[i];
+        if (singleAge < 0) {
+            badData.push(singleAge)
+        } 
+    }
+    return badData.length;
+}
+const result4 = findingBadData([10,12,-10,-12])
+console.log(result4);
