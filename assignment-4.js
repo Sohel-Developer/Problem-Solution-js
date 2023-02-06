@@ -23,3 +23,18 @@ function evenOdd(string) {
 
 const result2 =evenOdd('sohel')
 console.log(result2);
+
+
+
+function isLGSeven (number) {
+    const newNumber = number - 7;
+    if (newNumber <7) {
+        return newNumber
+    } else {
+        return number * 2;
+    }
+}
+const result3 = isLGSeven(17)
+console.log(result3);
+
+
