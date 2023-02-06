@@ -48,5 +48,23 @@ function findingBadData(age) {
     }
     return badData.length;
 }
-const result4 = findingBadData([10,12,-10,-12])
-console.log(result4);
+// const result4 = findingBadData([10,12,-10,-12])
+// console.log(result4);
+
+
+
+function gemsToDiamond(friend1,friend2,friend3) {
+    const friend1Gems = friend1 * 21;
+    const friend2Gems = friend2 * 32;
+    const friend3Gems = friend3 * 43;
+    const totalGems = friend1Gems + friend2Gems + friend3Gems;
+
+    if (totalGems < 2000) {
+        return totalGems
+    } else {
+        const newGems = totalGems - 2000;
+        return newGems;
+    }
+}
+// const result5 = gemsToDiamond(1,1,1)
+// console.log(result5);
